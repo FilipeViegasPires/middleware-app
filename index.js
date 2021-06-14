@@ -4,7 +4,7 @@ const port = 5000;
 const cookieParser = require("cookie-parser");
 
 app.use(logger);
-app.use(cookieParser);
+app.use(cookieParser());
 
 app.get("/", goodbye, (request, response) => {
   console.log("Home Page");
